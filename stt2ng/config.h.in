@@ -1,0 +1,25 @@
+#pragma once
+
+#cmakedefine ENABLE_3D
+#cmakedefine ENABLE_GUI
+#cmakedefine ENABLE_STTS
+
+struct Config {
+    #ifdef ENABLE_3D
+    static constexpr bool enable_3d = true;
+    #else
+    static constexpr bool enable_3d = false;
+    #endif
+
+    #ifdef ENABLE_GUI
+    static constexpr bool enable_gui = true;
+    #else
+    static constexpr bool enable_gui = false;
+    #endif
+
+    #ifdef ENABLE_STTS
+    static constexpr bool enable_stts = true;
+    #else
+    static constexpr bool enable_stts = false;
+    #endif
+};

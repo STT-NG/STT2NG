@@ -1,0 +1,30 @@
+{
+    "CSV": "tubecoordinates.csv",
+    "Geometry": "Cylindrical",
+    "Parameters": {
+        "Direction": {
+            "UseColumn": true,
+            "X": 4,
+            "Y": 5,
+            "Z": 6
+        },
+        "ID": {
+            "UseColumn": true,
+            "Value": 0
+        },
+        "Length": {
+            "UseColumn": true,
+            "Value": 7
+        },
+        "Position": {
+            "UseColumn": true,
+            "X": 1,
+            "Y": 2,
+            "Z": 3
+        },
+        "Radius": {
+            "UseColumn": false,
+            "Value": 0.5
+        }
+    }
+}
