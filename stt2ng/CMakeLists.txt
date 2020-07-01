@@ -1,9 +1,7 @@
-add_subdirectory(lib)
-
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-option(ENABLE_GUI "Compile with GUI support.")
-option(ENABLE_3D "Compile with support for the 3D viewer." ON)
+option(ENABLE_GUI "Compile with GUI support." ON)
+option(ENABLE_3D "Compile with support for the 3D viewer." OFF)
 option(ENABLE_STTS "Compile with support for various STT configurations. Only PANDA is accepted by default." OFF)
 
 if(ENABLE_GUI)
