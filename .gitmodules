@@ -1,6 +1,6 @@
 [submodule "GeomRel"]
 	path = GeomRel
-	url = https://github.com/K2017/GeomRel.git
+	url = https://github.com/STT-NG/GeomRel.git
 [submodule "STTUtil"]
 	path = STTUtil
-	url = https://github.com/K2017/STTUtil.git
+	url = https://github.com/STT-NG/STT-Utility.git
