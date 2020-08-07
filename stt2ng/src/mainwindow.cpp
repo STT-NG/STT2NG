@@ -36,9 +36,9 @@ MainWindow::MainWindow(QWidget *parent)
     setupTableWidget();
     setupGraphWidget();
     setupChartWidget();
-    if constexpr (Config::enable_3d) {
+    #ifdef ENABLE_3D
         setup3DView();
-    }
+    #endif
 }
 
 MainWindow::~MainWindow()

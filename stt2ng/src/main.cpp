@@ -113,7 +113,7 @@ ParseResult parseArgs(QCommandLineParser &parser, Input *input, QString *errorMs
 
     if (parser.isSet("t")) {
         bool ok = false;
-        const int tolerance = parser.value("t").toDouble(&ok);
+        const double tolerance = parser.value("t").toDouble(&ok);
         if (!ok) {
             *errorMsg = "Argument to '-t' expects a floating-point value.";
 

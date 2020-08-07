@@ -2,7 +2,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 option(ENABLE_GUI "Compile with GUI support." ON)
 option(ENABLE_3D "Compile with support for the 3D viewer." OFF)
-option(ENABLE_STTS "Compile with support for various STT configurations. Only PANDA is accepted by default." OFF)
+option(ENABLE_STTS "Compile with support for various STT configurations. Only PANDA is accepted by default." ON)
 
 if(ENABLE_GUI)
     set(CMAKE_AUTOUIC ON)
@@ -13,7 +13,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-if(NOT ENABLE_GUI OR NOT ENABLE_STTS)
+if(NOT ENABLE_GUI)
     list(APPEND HEADERS
         include/graphwriter.h
         include/geometryparameter.h
@@ -85,5 +85,3 @@ endif()
 configure_file(config.h.in include/config.h @ONLY)
 
 target_include_directories(STT2NG PRIVATE include/ ${CMAKE_CURRENT_BINARY_DIR}/include)
-
-
