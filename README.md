@@ -1,23 +1,4 @@
-## Setup
 
-
------
-
-
-#### Requirements:
-
-* Qt version 5.11 or greater
-* CMake version 3.5 or greater
-* (*Optional*) Qt Creator 4.11 x86 or greater
-
-#### Building:
-
-In order to build with CMake alone, run
-```
-cmake --build PATH_TO_SOURCE --target all
-```
-
-Alternatively (if that does not work), open the project using Qt creator and build from there.
 
 ## Usage
 -----
@@ -74,3 +55,28 @@ The neighbourhood relation can be generated for the set of nodes by pressing the
 For performance reasons, the generated edges are not all immediately visible. Only when a node is selected will the edges to its neighbours be shown.
 
 The set of neighbours for each node in the current graph can be exported to Text or Csv using `Graph -> Export as...`.
+
+## Setup
+
+
+-----
+
+
+#### Requirements:
+
+* Qt version 5.11 or greater
+* CMake version 3.5 or greater
+* (*Optional*) Qt Creator 4.11 x86 or greater
+
+#### Cloning
+
+To clone this repo use the command `git clone --recurse-submodules` with the link to the repo.
+
+#### Building:
+
+In order to build with CMake alone, run
+```
+cmake --build PATH_TO_SOURCE --target all
+```
+
+Alternatively (if that does not work), open the project using Qt creator and build from there.
