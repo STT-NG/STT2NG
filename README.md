@@ -1,7 +1,6 @@
 
 
 ## Usage
------
 
 ### CLI Usage
 The software can always be used in CLI mode. To force CLI mode usage, you can compile with -DNOGUI to disable the GUI. This has the added benefit of reducing the number of dependencies on Qt and reducing the size of the executable.
@@ -64,7 +63,7 @@ The set of neighbours for each node in the current graph can be exported to Text
 
 #### Requirements:
 
-* Qt version 5.11 or greater
+* Qt version 5.14 or greater
 * CMake version 3.5 or greater
 * (*Optional*) Qt Creator 4.11 x86 or greater
 
